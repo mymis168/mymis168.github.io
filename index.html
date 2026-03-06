@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數據分析與資料工程專家 | 個人履歷</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; }
+        .skill-card:hover { transform: translateY(-5px); transition: 0.3s; }
+    </style>
 </head>
-<body>
-    <h1>這是我的個人簡歷</h1>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-slate-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wider">DATA EXPERT</h1>
+            <div class="space-x-6">
+                <a href="#about" class="hover:text-blue-400">關於我</a>
+                <a href="#skills" class="hover:text-blue-400">專業技能</a>
+                <a href="#career" class="hover:text-blue-400">求職需求</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-20">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">數據驅動決策，工程賦能業務</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">資深數據分析師 / 資料工程師 | 精通 SQL Server、Power BI 與 Python 開發</p>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold border-b-4 border-blue-500 inline-block mb-8">關於我</h3>
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 leading-relaxed">
+                <p class="mb-4">
+                    你好！我是一位專注於<strong>數據工程與商業智慧 (BI)</strong> 的專家。在數據爆炸的時代，我的使命是將雜亂無章的原始資料，轉化為具備商業洞察價值的戰略資產。
+                </p>
+                <p>
+                    我擅長建構穩定的資料管道 (Data Pipeline)，並利用深厚的 SQL Server 經驗確保資料的高效存取與安全性。透過 Power BI 與精密的 DAX 建模，我能將複雜的業務指標轉化為直觀的可視化儀表板；同時，我亦能發揮 Python 的開發潛力，進行自動化腳本撰寫與進階數據分析，為企業解決關鍵的營運難題。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">核心專業技術</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-database"></i></div>
+                    <h4 class="text-xl font-bold mb-2">SQL Server</h4>
+                    <p class="text-gray-600 text-sm">精通資料庫架構設計、預存程序撰寫、T-SQL 優化與大規模數據 ETL 處理。</p>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-yellow-500 text-3xl mb-4"><i class="fas fa-chart-bar"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Power BI 報表</h4>
+                    <p class="text-gray-600 text-sm">打造具備高度互動性的報表，結合 UI/UX 設計原則，提供流暢的數據探索體驗。</p>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-red-500 text-3xl mb-4"><i class="fas fa-calculator"></i></div>
+                    <h4 class="text-xl font-bold mb-2">DAX 查詢分析</h4>
+                    <p class="text-gray-600 text-sm">擅長複雜的 DAX 建模，開發時間智能與關鍵績效指標 (KPI) 之邏輯計算。</p>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-green-600 text-3xl mb-4"><i class="fab fa-python"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Python 開發</h4>
+                    <p class="text-gray-600 text-sm">利用 Pandas/NumPy 進行數據清理，並開發自動化爬蟲與 API 對接工具。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="career" class="py-16 container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold border-b-4 border-green-500 inline-block mb-8">求職需求與職涯展望</h3>
+            <div class="bg-slate-800 text-white p-8 rounded-lg shadow-xl">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="bg-green-500 text-white rounded-full p-1 mr-3"><i class="fas fa-check text-xs"></i></span>
+                        <span><strong>期望職位：</strong> 資深數據分析師、資料工程師、BI 架構師。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-green-500 text-white rounded-full p-1 mr-3"><i class="fas fa-check text-xs"></i></span>
+                        <span><strong>理想環境：</strong> 重視數據文化，願意投入數位轉型或建立現代化 Data Warehouse 的團隊。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-green-500 text-white rounded-full p-1 mr-3"><i class="fas fa-check text-xs"></i></span>
+                        <span><strong>核心價值：</strong> 尋求能結合「技術開發」與「商務洞察」的職位，發揮 SQL 與 Python 雙重技術優勢。</span>
+                    </li>
+                </ul>
+                <div class="mt-8">
+                    <a href="mailto:yourname@example.com" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold transition">
+                        聯繫我洽談合作
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-200 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 數據分析專家 | 個人職涯展示頁面</p>
+    </footer>
+
 </body>
 </html>
